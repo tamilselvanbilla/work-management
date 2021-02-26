@@ -2,8 +2,27 @@
   <app-outer-header></app-outer-header>
 </div>
 
-<div id="mySidenav" class="sidenav width-250">
-  <a class=" closebtn">&#9776;</a>
-  <a>Announcement</a>
-  <a>Logout</a>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <div id="mySidenav" class="sidenav width-250">
+        <a class=" closebtn">&#9776;</a>
+        <a>Announcement</a>
+        <a>Logout</a>
+      </div>
+    </div>
+
+    <div class="col-10 ">
+      <div class="card mt-3" *ngFor="let data of loopValue">
+        <div class="container mt-3">
+          <p data-letters="P" class="mb-0"><b>Personal Documents</b></p>
+          <p class="ml-5 pl-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut
+            labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
