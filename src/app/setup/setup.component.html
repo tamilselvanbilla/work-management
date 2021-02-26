@@ -1,0 +1,74 @@
+<div>
+  <app-outer-header></app-outer-header>
+</div>
+
+<!-- OTP PAGE -->
+<div class="container-fluid mt-2">
+  <div class="row align-items-center">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <img src="./assets/images/postbox.png" alt="welcome">
+    </div>
+
+
+    <div *ngIf="!passwordPage" class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="col-10">
+        <label class="heading">Setup Your Application!</label>
+      </div>
+      <div class="col-12  mt-2">
+        <label class="light-label">To make a workspace from scratch, please confirm your email address.</label>
+      </div>
+      <div class="col-8  mt-4">
+        <label class="light-label">Company Name</label>
+        <input type="text" class="form-control p-3 light-label" placeholder="Enter your company name">
+      </div>
+      <div class="mt-2 d-flex">
+        <div class="col-4">
+          <label class="light-label">Location</label>
+          <input type="text" class="form-control p-3 light-label" placeholder="Coimbatore">
+        </div>
+        <div class="col-4">
+          <label class="light-label">No. of Employees</label>
+          <input type="text" class="form-control p-3 light-label" placeholder="12">
+        </div>
+      </div>
+      <div class="col-8  mt-2">
+        <label class="light-label">Domain Name</label>
+        <input type="text" class="form-control p-3 light-label" placeholder="Customize your domain">
+      </div>
+      <div class="col-8 mt-4">
+        <button class="btn" (click)="next()">Next</button>
+      </div>
+    </div>
+
+
+
+    <!-- Password page -->
+
+    <div *ngIf="passwordPage" class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="col-10">
+        <label class="heading">Create personal password!</label>
+      </div>
+      <div class="col-12  mt-2">
+        <label class="light-label">To make a workspace from scratch, please confirm your email address.</label>
+      </div>
+
+      <div class="mt-2 d-flex">
+        <div class="col-4">
+          <label class="light-label">First Name</label>
+          <input type="text" class="form-control p-3 light-label" placeholder="John">
+        </div>
+        <div class="col-4">
+          <label class="light-label">Last Name</label>
+          <input type="text" class="form-control p-3 light-label" placeholder="smith">
+        </div>
+      </div>
+      <div class="col-8  mt-2">
+        <label class="light-label">Password</label>
+        <input type="password" class="form-control p-3 light-label" placeholder="Customize your domain">
+      </div>
+      <div class="col-8 mt-4">
+        <button class="btn" (click)="complete()">Complete</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+<div>
+  <app-outer-header></app-outer-header>
+</div>
+
+<!-- Login PAGE -->
+<div class="container-fluid mt-2">
+  <div class="row align-items-center">
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <img src="./assets/images/postbox.png" alt="welcome">
+    </div>
+
+
+    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+      <div class="col-10">
+        <label class="heading">Login to your app</label>
+      </div>
+      <div class="col-12  mt-2">
+        <label class="light-label">To make a workspace from scratch, please confirm your email address.</label>
+      </div>
+      <div class="col-8  mt-4">
+        <label class="light-label">User Name</label>
+        <input type="text" class="form-control p-3 light-label" placeholder="Enter your user name">
+      </div>
+      <div class="col-8  mt-2">
+        <label class="light-label">Password</label>
+        <input type="password" class="form-control p-3 light-label" placeholder="Enter your password">
+      </div>
+      <div class="col-8 mt-4">
+        <button class="btn" (click)="login()">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
