@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-outer-header',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./outer-header.component.scss']
 })
 export class OuterHeaderComponent implements OnInit {
-
-  constructor() { }
+  activeRoute = '';
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
+    this.activeRoute = this.route.url;
   }
 
+  loginRoute() {
+    this.route.navigate(['/login']);
+  }
 }

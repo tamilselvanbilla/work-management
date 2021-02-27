@@ -4,6 +4,10 @@
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <div class="d-flex">  
+      <a *ngIf="activeRoute !== '/login' && activeRoute !== '/dashboard'" class="nav-link cursor" (click)="loginRoute()"><b>Login</b> </a>
+      <a class="nav-link">support@squashapps.com</a>
+    </div>
     <div class="collapse navbar-collapse" id="navbarText">
 
       <span class="navbar-text">

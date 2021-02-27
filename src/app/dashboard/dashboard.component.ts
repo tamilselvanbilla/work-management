@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
   sideNav: Boolean = false;
+  rightSideNav: Boolean = false;
   loopValue = [1, 2, 3];
+
   constructor() { }
 
   ngOnInit(): void {
